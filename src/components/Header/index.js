@@ -1,8 +1,6 @@
 export default function Header(props) {
     return <head>
         <title>AluraQuiz! - Steven Universo</title>
-        <meta property="og:title" content="Quiz sobre Steven Universo"/>
-        <meta property="og:site_name" content="AluraQuiz!"/>
         <meta property="og:description" content="Um quiz sobre Steven Universo "/>
         <meta property="og:image" content={props.children}/>
         <meta property="og:image:type" content="image/jpeg"/>
