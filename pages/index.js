@@ -5,6 +5,7 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import Header from '../src/components/Header';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -20,6 +21,7 @@ export const QuizContainer = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Header></Header>
       <QuizContainer>
         <QuizLogo />
         <Widget>
@@ -40,7 +42,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/felipebeskow" />
+      <GitHubCorner projectUrl="https://github.com/felipebeskow/aluraquiz" />
     </QuizBackground>
   );
 }
