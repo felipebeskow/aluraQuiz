@@ -1,0 +1,31 @@
+{
+  "bg": "https://hipertextual.com/files/2020/03/hipertextual-2020465354.jpeg",
+  "title": "Steven Universe",
+  "description": "Veja o quanto você conhece sobre o Steven Universo e as Crystal",
+  "questions": [
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": "Como fazer um background gradiente com css?",
+      "description": "Faz tempo em haha",
+      "answer": 0,
+      "alternatives": [
+         "background: linear-gradient(#e66465, #9198e5);",
+         "background: gradient(#e66465, #9198e5);"
+      ]
+    }
+  ],
+  "external": [
+    ""
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#e91e63",
+      "secondary": "#ffc400",
+      "mainBg": "#171B35",
+      "contrastText": "#FFFFFF",
+      "wrong": "#FF5722",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
+  }
+}
