@@ -1,27 +1,19 @@
-import styled from 'styled-components';
-import db from '../db.json';
+import React from 'react';
+import { useRouter } from 'next/router';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
-import Header from '../src/components/Header';
-
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
+import QuizContainer from '../src/components/QuizConteiner';
+import db from '../db.json';
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+
   return (
     <QuizBackground backgroundImage={db.bg}>
-      <Header>{db.bg}</Header>
       <QuizContainer>
         <QuizLogo />
         <Widget>
@@ -30,6 +22,25 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content>
             <p>{db.description}</p>
+            <form onSubmit={(eventForm) => {
+              eventForm.preventDefault();
+              router.push(`/quiz?name=${name}`);
+            }}
+            >
+              <input
+                placeholder="Digite seu nome lindo aqui"
+                onChange={(eventButton) => {
+                  setName(eventButton.target.value);
+                }}
+              />
+              <button
+                type="submit"
+                disabled={name === ''}
+              >
+                Jogar como
+                {` ${name}`}
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
 
@@ -37,7 +48,7 @@ export default function Home() {
           <Widget.Content>
             <h1>Quizes da Galera</h1>
 
-            <p>lorem ipsum dolor sit amet...</p>
+            <p>Veja também outros quizes incríveis que o pessoal da Imersão React Next da fez:</p>
           </Widget.Content>
         </Widget>
         <Footer />
@@ -46,4 +57,3 @@ export default function Home() {
     </QuizBackground>
   );
 }
-
