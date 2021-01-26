@@ -47,8 +47,8 @@ export default function Home() {
         <Widget>
           <Widget.Content>
             <h1>Quizes da Galera</h1>
-
             <p>Veja também outros quizes incríveis que o pessoal da Imersão React Next da fez:</p>
+            <p>Em breve mais informações...</p>
           </Widget.Content>
         </Widget>
         <Footer />
