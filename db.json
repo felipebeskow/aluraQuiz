@@ -4,6 +4,39 @@
   "description": "Veja o quanto você conhece sobre o Steven Universo e as Crystal Gems. Duvido você acertar tudo!",
   "questions": [
     {
+      "image": "https://pa1.narvii.com/6518/167408fc620c2bcad5ea4f6cb6e6c5876ae6a3df_00.gif",
+      "title": "Como é o nome do blog do Ronaldo?",
+      "description": "Ele o usa para catalogar eventos estranhos de Beach City inclusive os dedos gatos do Steven",
+      "answer": 1,
+      "alternatives": [
+        "Keep The City Weird",
+        "Keep Beach City Weird",
+        "Snake People Weird"
+      ]
+    },
+    {
+      "image": "https://i.pinimg.com/originals/ba/a9/1a/baa91a4fe05b7b09448d2b525ff6eab2.jpg",
+      "title": "O que Garnet e Bluebird tem em comum?",
+      "description": "Is the answer",
+      "answer": 2,
+      "alternatives": [
+        "As duas aparecem em Steven Universo Futuro",
+        "As duas são inimigas do Steven",
+        "As duas são fusões"
+      ]
+    },
+    {
+      "image": "https://64.media.tumblr.com/484fa94d129742202adbe11e49ce4497/tumblr_inline_nt7jhiqkX11r233s3_400.gifv",
+      "title": "O que é o olho vermelho que aparece no início da série?",
+      "description": "Vamos lá, no comecinho",
+      "answer": 0,
+      "alternatives": [
+        "Um equipamento para relatar possíveis Gems",
+        "Conjuntivite",
+        "Uma arma das Crystal Gem"
+      ]
+    },
+    {
       "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
       "title": "Como fazer um background gradiente com css?",
       "description": "Faz tempo em haha",
@@ -26,6 +59,6 @@
       "wrong": "#FF5722",
       "success": "#4CAF50"
     },
-    "borderRadius": "4px"
+    "borderRadius": "10px"
   }
 }

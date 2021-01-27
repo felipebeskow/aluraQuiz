@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 // src/components/Footer/index.js
 const FooterWrapper = styled.footer`
-  background-color: #00000070;
+  background-color: rgba(69, 69, 69, 0.8);
   padding: 20px;
   display: flex;
   align-items: center;

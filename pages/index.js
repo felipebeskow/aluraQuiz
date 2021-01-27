@@ -5,7 +5,9 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
-import QuizContainer from '../src/components/QuizConteiner';
+import QuizContainer from '../src/components/QuizContainer';
+import Button from '../src/components/Button';
+import Input from '../src/components/Input';
 import db from '../db.json';
 
 export default function Home() {
@@ -27,19 +29,18 @@ export default function Home() {
               router.push(`/quiz?name=${name}`);
             }}
             >
-              <input
+              <Input
+                name="nomeDoUsuario"
                 placeholder="Digite seu nome lindo aqui"
-                onChange={(eventButton) => {
-                  setName(eventButton.target.value);
-                }}
+                onChange={(eventButton) => setName(eventButton.target.value)}
+                value={name}
               />
-              <button
+              <Button
                 type="submit"
                 disabled={name === ''}
               >
-                Jogar como
-                {` ${name}`}
-              </button>
+                {`Jogar como ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
