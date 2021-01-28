@@ -15,7 +15,7 @@ function LoadingWidget() {
       </Widget.Header>
       <Widget.Content>
         <img
-          src="https://terapia.beskow.net.br/img/loading.gif"
+          src="https://raw.githubusercontent.com/felipebeskow/aluraQuiz/main/src/img/pacman-loading.gif"
           alt="imagem de carregamento"
         />
       </Widget.Content>
